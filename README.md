@@ -89,3 +89,39 @@ Run this CodeDeploy agent on ec2 instance.
 ```sh
 bash install.sh
 ```
+
+### Step 7 - Now We need to Push our appspec.yml and scripts File into CodeCommit Repository
+
+Connect again Linux-Instance Terminal.
+
+```sh
+sudo su -
+mkdir aws
+cd aws/
+yum install git -y
+```
+git clone < CodeCommit Repo Url >
+
+```sh
+cd my-app/
+```
+
+Create  vi appspec.yml
+
+```sh
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: var/www/html
+hooks:
+  AfterInstall:
+    - location: scripts/install_nginx.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/install_nginx.sh
+      timeout: 300
+      runas: root
+
+```
