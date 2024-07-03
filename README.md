@@ -55,5 +55,7 @@ Install AWS CodeDeploy Agent  =  Never
 
 Load balancer  =  Disable
 
+Click Create Deployment Group
+
 ### Step 6 - Setting up the agent for CodeDeploy.
 
