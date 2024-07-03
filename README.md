@@ -151,8 +151,11 @@ cd ..
 #### Now We need to Push files into CodeCommit Repository
 
 ```sh
+ls
 git status
 git add .
 git commit -m "my appspec.yml and scripts File"
 git push origin master
 ```
+
+Now Refresh your Repository, and look for the newly added files.
