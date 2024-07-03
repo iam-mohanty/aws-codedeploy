@@ -47,3 +47,10 @@ Deployment group name
 my-app-deployment-group
 ```
 
+Deployment type = In-place
+
+Environment configuration =  Amazon EC2 Instances
+
+Install AWS CodeDeploy Agent  =  Never
+
+Load balancer  =  Disable
