@@ -159,3 +159,42 @@ git push origin master
 ```
 
 Now Refresh your Repository, and look for the newly added files.
+
+#### Again build the app so that the updated source code of the application can be reached to artifact(S3).
+
+Go to CodeBuild  --->  Start Build
+
+
+### Step 8 - Create deployment
+
+Revision location = s3://my-app-bucket-24/mybuild
+
+Revision file type = .zip
+
+Create Deployement
+
+### Step 9 - Create IAM Role creation for instances
+
+Create Role   --->  AWS Service = EC2
+
+Role Name
+```sh
+ec2-code-deploy
+```
+
+Attach Policy to role
+
+```sh
+AmazonEC2FullAccess
+AmazonS3FullAccess
+AWSCodeDeployFullAccess
+```
+
+Goto your running instance  -->  Actions  -->  Security  --> Modify IAM Role
+
+
+### Step 10 - Now connect and restart your instance, by using the below command.
+
+```sh
+sudo service codedeploy-agent restart
+```
