@@ -106,7 +106,7 @@ git clone < CodeCommit Repo Url >
 cd my-app/
 ```
 
-Create  vi appspec.yml
+Create :- vi appspec.yml
 
 ```sh
 version: 0.0
@@ -125,3 +125,6 @@ hooks:
       runas: root
 
 ```
+
+Create :-  mkdir scripts  ----->   cd scripts/
+
