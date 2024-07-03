@@ -17,3 +17,20 @@ Deployment group name
 ```sh
 my-app-deployment-group
 ```
+
+
+
+
+
+
+
+
+
+
+Step 3 - So we need to create a user and IAM users permissions
+
+go to iam ---> crt role  ---> aws service = codedeploy 
+
+role name = code-deploy-role   ---> crt 
+
+attach policy to role = ec2 full access , s3 full , code deploy full ,  
