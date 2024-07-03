@@ -10,7 +10,26 @@ my-app-application
 
 Compute platform   --->  EC2/on-premises
 
-### Step 3 - The application is created. Now click on Create Deployment group.
+### Step 3 - Create CodeDeploy IAM role
+
+Create Role   --->  AWS Service = codedeploy
+
+Role Name
+```sh
+code-deploy-role
+```
+
+Attach Policy to role
+
+```sh
+AmazonEC2FullAccess
+AmazonEC2RoleforAWSCodeDeploy
+AmazonEC2RoleforAWSCodeDeployLimited
+AmazonS3FullAccess
+AWSCodeDeployFullAccess
+```
+
+### Step 4 - The application is created. Now click on Create Deployment group.
 
 Deployment group name
 
@@ -18,19 +37,3 @@ Deployment group name
 my-app-deployment-group
 ```
 
-
-
-
-
-
-
-
-
-
-Step 3 - So we need to create a user and IAM users permissions
-
-go to iam ---> crt role  ---> aws service = codedeploy 
-
-role name = code-deploy-role   ---> crt 
-
-attach policy to role = ec2 full access , s3 full , code deploy full ,  
