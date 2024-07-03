@@ -198,3 +198,6 @@ Goto your running instance  -->  Actions  -->  Security  --> Modify IAM Role
 ```sh
 sudo service codedeploy-agent restart
 ```
+
+
+#### Now Copy your Public_IP and check it in the browser
