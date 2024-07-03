@@ -128,7 +128,7 @@ hooks:
 
 Create :-  mkdir scripts  ----->   cd scripts/
 
-vi install_nginx.sh
+#### vi install_nginx.sh
 
 ```sh
 #!/bin/bash
@@ -137,10 +137,22 @@ sudo apt-get update
 sudo apt-get install -y nginx
 ```
 
-vi start_nginx.sh
+#### vi start_nginx.sh
 
 ```sh
 #!/bin/bash
 
 sudo service nginx start
+```
+
+
+cd ..
+
+#### Now We need to Push files into CodeCommit Repository
+
+```sh
+git status
+git add .
+git commit -m "my appspec.yml and scripts File"
+git push origin master
 ```
