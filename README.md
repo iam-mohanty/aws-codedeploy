@@ -54,3 +54,6 @@ Environment configuration =  Amazon EC2 Instances
 Install AWS CodeDeploy Agent  =  Never
 
 Load balancer  =  Disable
+
+### Step 6 - Setting up the agent for CodeDeploy.
+
