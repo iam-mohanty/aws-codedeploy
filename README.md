@@ -128,3 +128,19 @@ hooks:
 
 Create :-  mkdir scripts  ----->   cd scripts/
 
+vi install_nginx.sh
+
+```sh
+#!/bin/bash
+
+sudo apt-get update
+sudo apt-get install -y nginx
+```
+
+vi start_nginx.sh
+
+```sh
+#!/bin/bash
+
+sudo service nginx start
+```
