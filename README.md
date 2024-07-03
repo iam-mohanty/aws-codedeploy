@@ -83,3 +83,9 @@ systemctl list-units --type=service | grep codedeploy
 sudo service codedeploy-agent status
 
 ```
+
+Run this CodeDeploy agent on ec2 instance.
+
+```sh
+bash install.sh
+```
