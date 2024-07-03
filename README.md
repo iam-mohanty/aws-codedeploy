@@ -39,7 +39,7 @@ Instance Name
 my-app-ec2
 ```
 
-### Step 4 - The application is created. Now click on Create Deployment group.
+### Step 5 - Now click on Create Deployment group.
 
 Deployment group name
 
