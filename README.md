@@ -29,6 +29,16 @@ AmazonS3FullAccess
 AWSCodeDeployFullAccess
 ```
 
+### Step 4 - Search for EC2 and launch an instance.
+
+Go to EC2 & Create ubuntu-22 instance
+
+Instance Name
+
+```sh
+my-app-ec2
+```
+
 ### Step 4 - The application is created. Now click on Create Deployment group.
 
 Deployment group name
