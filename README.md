@@ -106,7 +106,7 @@ git clone < CodeCommit Repo Url >
 cd my-app/
 ```
 
-Create :- vi appspec.yml
+#### vi appspec.yml
 
 ```sh
 version: 0.0
